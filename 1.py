@@ -5,10 +5,10 @@ numbers = []
 
 while True:
     s = input("Введите число: ")
-    if s == "":  # если строка пустая - выходим
+    if s == "":  
         break
     else:
-        numbers.append(float(s))  # float, чтобы можно было вводить дроби
+        numbers.append(float(s))  
 
 if len(numbers) == 0:
     print("Вы не ввели ни одного числа.")
@@ -28,14 +28,14 @@ else:
         else:
             above.append(x)
             
-    print("\nЧисла НИЖЕ среднего:")
+    print("\nЧисла ниже среднего:")
     for x in below:
         print(x)
         
-    print("\nЧисла РАВНЫЕ среднему:")
+    print("\nЧисла равные среднему:")
     for x in equal:
         print(x)
         
-    print("\nЧисла ВЫШЕ среднего:")
+    print("\nЧисла выше среднего:")
     for x in above:
         print(x)
